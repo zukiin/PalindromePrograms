@@ -13,10 +13,10 @@ namespace Palindrome
             string word, reverse;
             Console.WriteLine("enter a word: ");
             word = Console.ReadLine();
-            char[] ch = word.ToCharArray();
+            char[] characters = word.ToCharArray();
 
-            Array.Reverse(ch);
-            reverse = new string(ch);
+            Array.Reverse(characters);
+            reverse = new string(characters);
 
             bool b = word.Equals(reverse, StringComparison.OrdinalIgnoreCase);
             if (b == true)
